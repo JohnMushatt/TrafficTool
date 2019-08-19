@@ -6,11 +6,19 @@
  */
 
 #include "DataParser.h"
+/**
+ * Constructor for DataParser
+ * @param file_name File path to be parsed
+ */
 DataParser::DataParser(const char *file_name) {
 
 	parseFile(file_name);
 }
-
+/**
+ * Parse file for data
+ * @param file file path to be parsed
+ * @return True if file is opened and parsed, false if otherwise
+ */
 bool DataParser::parseFile(const char *file) {
 	unsigned int row_count = 0;
 	int route_id, parked_cars, rental_cars;
@@ -39,21 +47,22 @@ bool DataParser::parseFile(const char *file) {
 			rental_cars = std::stoi(current_line.at(5));
 			zone = current_line.at(6);
 			congestion = current_line.at(7);
-			buildTrafficDataObject(route_id,date,time,street_name,parked_cars,rental_cars,zone,congestion);
+			buildTrafficDataObject(route_id, date, time, street_name,
+					parked_cars, rental_cars, zone, congestion);
 
 		}
-		//boost::property_tree::basic_ptree<std::string, std::string> root;
-
-		//boost::property_tree::read_json(file, root);
 
 	} else {
-		std::cout << "Failed to open file" << std::endl;
+		throw std::runtime_error("Failed to open file");
 		return false;
 	}
 	std::cout << "Logging info.\nNumber of parsed rows: " << row_count
 			<< std::endl;
 	return true;
 }
+/**
+ *
+ */
 bool DataParser::buildTrafficDataObject(int route_id, std::string date,
 		std::string time, std::string street_name, int parked_cars,
 		int rental_cars, std::string parking_zone,
@@ -63,18 +72,26 @@ bool DataParser::buildTrafficDataObject(int route_id, std::string date,
 			parking_congestion);
 
 	if (!current_data) {
-		std::cout << "Failed to create data object, check data file"
-				<< std::endl;
+		throw std::runtime_error("Failed to create data object, check data file");
+
 		return false;
 	}
 	data.push_back(current_data);
 	return true;
 
 }
+/**
+ * Destructor for DataParser
+ */
 DataParser::~DataParser() {
-	// TODO Auto-generated destructor stub
+	for( auto element : data) {
+		delete element;
+	}
 }
+void DataParser::displayData() {
 
+	//auto hist = boost::histogram::make_histogram(boost::histogram::axis::regular<>(6,-1,,2,"x"));
+}
 int main(int argc, char **argv) {
 	std::cout << "Running data tool with arguments: " << argv[1] << std::endl;
 

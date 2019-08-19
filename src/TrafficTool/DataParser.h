@@ -16,12 +16,14 @@
 #include <iostream>
 #include <string>
 #include <regex>
+#include <algorithm>
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/json_parser.hpp>
 #include <boost/regex.hpp>
+
 #include <iterator>
 #include <functional>
-
+#include <stdexcept>
 #define KBLU "\x1B[34m"
 #define RST "\x1B[36m"
 
@@ -38,6 +40,8 @@ public:
 	 * Default Destructor
 	 */
 	virtual ~DataParser();
+
+	void displayData();
 private:
 	//2D Vector holding traffic data objects
 	std::vector<TrafficDataObject*> data;
