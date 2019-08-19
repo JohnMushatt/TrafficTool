@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++11 -Wall -Wextra -g   CMakeFiles/traffic_program.dir/DataParser.cpp.o CMakeFiles/traffic_program.dir/TrafficDataObject.cpp.o  -o traffic_program 

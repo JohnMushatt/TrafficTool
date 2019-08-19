@@ -1,0 +1,42 @@
+[
+  {
+    "route_id": "0",
+    "date_stamp": "2019-08-13",
+    "time_stamp": "13:00",
+    "street_name": "Akranesvegur",
+    "total_parked_cars": 25,
+    "total_rentals": 10,
+    "parking_zone": "red",
+    "parking_congestion": "medium"
+  },
+  {
+    "route_id": "0",
+    "date_stamp": "2019-08-13",
+    "time_stamp": "15:00",
+    "street_name": "Akranesvegur",
+    "total_parked_cars": 25,
+    "total_rentals": 10,
+    "parking_zone": "orange",
+    "parking_congestion": "high"
+  },
+  {
+    "route_id": "1",
+    "date_stamp": "2019-08-13",
+    "time_stamp": "13:00",
+    "street_name": "Hvítárvallavegur",
+    "total_parked_cars": 25,
+    "total_rentals": 10,
+    "parking_zone": "red",
+    "parking_congestion": "low"
+  },
+  {
+    "route_id": "2",
+    "date_stamp": "2019-08-13",
+    "time_stamp": "13:00",
+    "street_name": "Hvanneyrarvegur",
+    "total_parked_cars": 25,
+    "total_rentals": 10,
+    "parking_zone": "green",
+    "parking_congestion": "medium"
+  }
+]
