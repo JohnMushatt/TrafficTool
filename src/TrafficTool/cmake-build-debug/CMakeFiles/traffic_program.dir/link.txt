@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -std=c++11 -Wall -Wextra -g  -Wl,--enable-auto-import CMakeFiles/traffic_program.dir/DataParser.cpp.o CMakeFiles/traffic_program.dir/TrafficDataObject.cpp.o  -o traffic_program.exe -Wl,--out-implib,libtraffic_program.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

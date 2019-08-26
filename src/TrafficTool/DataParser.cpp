@@ -56,12 +56,21 @@ bool DataParser::parseFile(const char *file) {
 		throw std::runtime_error("Failed to open file");
 		return false;
 	}
-	std::cout << "Logging info.\nNumber of parsed rows: " << row_count
+	std::cout << "Logging info." << std::endl << "Number of parsed rows: " << row_count
 			<< std::endl;
 	return true;
 }
 /**
- *
+ * Consturcts a TrafficDataObject and inserts it into a container
+ * @param route_id Given route id
+ * @param date
+ * @param time
+ * @param street_name
+ * @param parked_cars
+ * @param rental_cars
+ * @param parking_zone
+ * @param parking_congestion
+ * @return
  */
 bool DataParser::buildTrafficDataObject(int route_id, std::string date,
 		std::string time, std::string street_name, int parked_cars,

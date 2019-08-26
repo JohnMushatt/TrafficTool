@@ -1,12 +1,14 @@
 project (Traffic_Program)
-cmake_minimum_required (VERSION 3.15)
+set(CMAKE_LEGACY_CYGWIN_WIN32 0) # Remove when CMake >= 2.8.4 is required
+
+cmake_minimum_required (VERSION 3.14.5)
 
 
 
 
 set(Boost_NO_SYSTEM_PATHS ON)
-set(BOOST_ROOT "/home/john/Desktop/External_Libs/boost_1_70_0")
-set(BOOST_INCLUDEDIR "/home/john/Desktop/External_Libs/boost_1_70_0/boost")
+set(BOOST_ROOT "C:\\Users\\johnm\\Desktop\\TrafficTool\\libs\\boost_1_70_0")
+set(BOOST_INCLUDEDIR "C:\\Users\\johnm\\Desktop\\TrafficTool\\libs\\boost_1_70_0\\boost")
 
 set(CMAKE_CXX_FLAGS "-std=c++11 -Wall -Wextra")
 set(CMAKE_BUILD_TYPE DEBUG)
@@ -27,4 +29,5 @@ if(Boost_FOUND)
 	add_executable(traffic_program DataParser.cpp TrafficDataObject.cpp)
 	target_link_libraries(traffic_program ${Boost_LIBRARIES})
 endif()
+#add_executable(traffic_program DataParser.cpp TrafficDataObject.cpp)
 
