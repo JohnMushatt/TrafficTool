@@ -20,7 +20,7 @@
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/json_parser.hpp>
 #include <boost/regex.hpp>
-
+//#include <boost/histogram.hpp>
 #include <iterator>
 #include <functional>
 #include <stdexcept>
@@ -44,7 +44,7 @@ public:
 	void displayData();
 private:
 	//2D Vector holding traffic data objects
-	std::vector<TrafficDataObject*> data;
+	std::vector<TrafficDataObject *> data;
 	/**
 	 * Parses files
 	 */

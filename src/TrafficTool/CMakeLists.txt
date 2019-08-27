@@ -5,29 +5,25 @@ cmake_minimum_required (VERSION 3.14.5)
 
 
 
-
-set(Boost_NO_SYSTEM_PATHS ON)
-set(BOOST_ROOT "C:\\Users\\johnm\\Desktop\\TrafficTool\\libs\\boost_1_70_0")
-set(BOOST_INCLUDEDIR "C:\\Users\\johnm\\Desktop\\TrafficTool\\libs\\boost_1_70_0\\boost")
-
 set(CMAKE_CXX_FLAGS "-std=c++11 -Wall -Wextra")
 set(CMAKE_BUILD_TYPE DEBUG)
 
 
+set(Boost_NO_SYSTEM_PATHS ON)
+set(BOOST_ROOT "C:\\Users\\johnm\\Desktop\\TrafficTool\\libs\\boost_1_70_0")
+set(BOOST_INCLUDEDIR "C:\\Users\\johnm\\Desktop\\TrafficTool\\libs\\boost_1_70_0\\boost")
 find_package(Boost 1.70.0)
-
-
 include_directories("${Boost_INCLUDE_DIRS}")
 message(STATUS "Boost include dir: ${Boost_INCLUDE_DIRS}")
 message(STATUS "Boost libraries: ${Boost_LIBRARIES}")
 
-
-
-
+set(CONCPP_ROOT "C:\\Users\\johnm\\Desktop\\TrafficTool\\libs\\mysql-connector-c++-8.0.17-winx64")
+set(CONCPP_INCLUDE "C:\\Users\\johnm\\Desktop\\TrafficTool\\libs\\mysql-connector-c++-8.0.17-winx64\\include")
+set(CONCPP_LIB_DIR "C:\\Users\\johnm\\Desktop\\TrafficTool\\libs\\mysql-connector-c++-8.0.17-winx64\\lib64")
+set(CONCPP_STATIC_LIB_DIR "C:\\Users\\johnm\\Desktop\\TrafficTool\\libs\\mysql-connector-c++-8.0.17-winx64\\lib64")
 if(Boost_FOUND)
 	include_directories(${Boost_INCLUDE_DIRS})
 	add_executable(traffic_program DataParser.cpp TrafficDataObject.cpp)
 	target_link_libraries(traffic_program ${Boost_LIBRARIES})
 endif()
-#add_executable(traffic_program DataParser.cpp TrafficDataObject.cpp)
 
