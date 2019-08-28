@@ -11,6 +11,8 @@ Additional libraries:
 	- Json Parser
 	- Histogram
 - MySQL C++ Connector
+- MathGL2
+    - TBD
 
 ## Build Information
 ```
