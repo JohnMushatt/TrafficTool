@@ -11,6 +11,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include"
   "C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0"
   )
 

@@ -5,7 +5,7 @@
 		<Option title="Traffic_Program"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Users\;CMake Files\Users\johnm\;CMake Files\Users\johnm\Desktop\;CMake Files\Users\johnm\Desktop\TrafficTool\;CMake Files\Users\johnm\Desktop\TrafficTool\libs\;CMake Files\Users\johnm\Desktop\TrafficTool\libs\mathgl-2.4.4-mingw.win64\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/cmake-build-debug"/>
@@ -34,6 +34,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include"/>
 					<Add directory="C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
@@ -56,6 +57,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include"/>
 					<Add directory="C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
@@ -96,6 +98,9 @@
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/FindMathGL2.cmake">
+			<Option virtualFolder="CMake Files\Users\johnm\Desktop\TrafficTool\libs\mathgl-2.4.4-mingw.win64\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

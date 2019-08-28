@@ -39,7 +39,7 @@ std::string TrafficDataObject::toString() {
     std::ostringstream oss;
 
     oss << "Route id: " << this->getRouteID() << " Date: "
-        << this->getDate() << " Time: " << this->getTime() << "\nStreet Name: "
+        << this->getDate() << " Time: " << this->getTime() << "Street Name: "
         << this->getStreetName() << " Parked Cars: " << this->getParkedCars() << " Rental Cars: "
         << this->getRentalCars()
         << " Parking Zone: " << this->stringifyParking() << " Congestion Level: " << this->stringifyCongestion();

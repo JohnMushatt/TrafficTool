@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11 -Wall -Wextra -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -IC:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0 
+CXX_INCLUDES = -IC:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include -IC:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0 
 

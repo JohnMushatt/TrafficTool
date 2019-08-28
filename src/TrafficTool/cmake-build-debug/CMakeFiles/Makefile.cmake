@@ -24,6 +24,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/cygdrive/c/Users/johnm/.CLion2019.2/system/cygwin_cmake/share/cmake-3.14.5/Modules/Compiler/GNU-CXX.cmake"
   "/cygdrive/c/Users/johnm/.CLion2019.2/system/cygwin_cmake/share/cmake-3.14.5/Modules/Compiler/GNU.cmake"
   "/cygdrive/c/Users/johnm/.CLion2019.2/system/cygwin_cmake/share/cmake-3.14.5/Modules/FindBoost.cmake"
+  "/cygdrive/c/Users/johnm/.CLion2019.2/system/cygwin_cmake/share/cmake-3.14.5/Modules/FindPackageHandleStandardArgs.cmake"
+  "/cygdrive/c/Users/johnm/.CLion2019.2/system/cygwin_cmake/share/cmake-3.14.5/Modules/FindPackageMessage.cmake"
   "/cygdrive/c/Users/johnm/.CLion2019.2/system/cygwin_cmake/share/cmake-3.14.5/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "/cygdrive/c/Users/johnm/.CLion2019.2/system/cygwin_cmake/share/cmake-3.14.5/Modules/Platform/CYGWIN-GNU-C.cmake"
   "/cygdrive/c/Users/johnm/.CLion2019.2/system/cygwin_cmake/share/cmake-3.14.5/Modules/Platform/CYGWIN-GNU-CXX.cmake"
@@ -37,6 +39,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.14.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.14.5/CMakeRCCompiler.cmake"
   "CMakeFiles/3.14.5/CMakeSystem.cmake"
+  "C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/FindMathGL2.cmake"
   )
 
 # The corresponding makefile is:

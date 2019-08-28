@@ -20,7 +20,8 @@
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/json_parser.hpp>
 #include <boost/regex.hpp>
-//#include <boost/histogram.hpp>
+
+#include <mgl2/mgl.h>
 #include <iterator>
 #include <functional>
 #include <stdexcept>

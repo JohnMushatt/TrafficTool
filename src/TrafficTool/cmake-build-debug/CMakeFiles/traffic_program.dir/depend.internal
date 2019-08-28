@@ -1022,6 +1022,29 @@ CMakeFiles/traffic_program.dir/DataParser.cpp.o
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/utility/swap.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/version.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/visit_each.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/abstract.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/addon.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/base_cf.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/canvas_cf.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/config.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/cont.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/data.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/data_cf.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/datac.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/datac_cf.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/define.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/dllexport.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/fit.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/mgl.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/mgl_cf.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/other.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/pde.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/plot.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/prim.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/surf.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/type.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/vect.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/volume.h
 CMakeFiles/traffic_program.dir/TrafficDataObject.cpp.o
  /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/TrafficDataObject.cpp
  /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/TrafficDataObject.h
