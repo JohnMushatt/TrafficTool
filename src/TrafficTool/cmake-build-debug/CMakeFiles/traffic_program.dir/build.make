@@ -94,6 +94,8 @@ traffic_program_EXTERNAL_OBJECTS =
 traffic_program.exe: CMakeFiles/traffic_program.dir/DataParser.cpp.o
 traffic_program.exe: CMakeFiles/traffic_program.dir/TrafficDataObject.cpp.o
 traffic_program.exe: CMakeFiles/traffic_program.dir/build.make
+traffic_program.exe: C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/lib/libgsl.a
+traffic_program.exe: C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/lib/libgslcblas.a
 traffic_program.exe: CMakeFiles/traffic_program.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable traffic_program.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/traffic_program.dir/link.txt --verbose=$(VERBOSE)

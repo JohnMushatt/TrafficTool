@@ -21,11 +21,9 @@ Call Stack (most recent call first):
 
 
 -- MathGL2 library status: TRUE
--- MathGL2 include dir: C:\Users\johnm\Desktop\TrafficTool\libs\mathgl-2.4.4-mingw.win64\include
--- MathGL2 libraries dir: C:\Users\johnm\Desktop\TrafficTool\libs\mathgl-2.4.4-mingw.win64\lib
--- MathGL2 root: C:\Users\johnm\Desktop\TrafficTool\libs\mathgl-2.4.4-mingw.win64
 -- Boost version: 1.70.0
--- Boost include dir: C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0
+-- Boost library status: 1
+-- GSL library status: TRUE
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/cmake-build-debug

@@ -36,6 +36,7 @@
 				<Compiler>
 					<Add directory="C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include"/>
 					<Add directory="C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0"/>
+					<Add directory="C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-shared/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
@@ -59,6 +60,7 @@
 				<Compiler>
 					<Add directory="C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include"/>
 					<Add directory="C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0"/>
+					<Add directory="C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-shared/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>

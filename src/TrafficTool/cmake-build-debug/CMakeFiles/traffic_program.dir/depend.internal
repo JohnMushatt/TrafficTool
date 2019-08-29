@@ -1022,6 +1022,56 @@ CMakeFiles/traffic_program.dir/DataParser.cpp.o
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/utility/swap.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/version.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/visit_each.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_block_char.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_block_complex_double.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_block_complex_float.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_block_complex_long_double.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_block_double.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_block_float.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_block_int.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_block_long.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_block_long_double.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_block_short.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_block_uchar.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_block_uint.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_block_ulong.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_block_ushort.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_check_range.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_complex.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_errno.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_inline.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_matrix.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_matrix_char.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_matrix_complex_double.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_matrix_complex_float.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_matrix_complex_long_double.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_matrix_double.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_matrix_float.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_matrix_int.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_matrix_long.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_matrix_long_double.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_matrix_short.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_matrix_uchar.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_matrix_uint.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_matrix_ulong.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_matrix_ushort.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_types.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_vector.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_vector_char.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_vector_complex.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_vector_complex_double.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_vector_complex_float.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_vector_complex_long_double.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_vector_double.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_vector_float.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_vector_int.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_vector_long.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_vector_long_double.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_vector_short.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_vector_uchar.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_vector_uint.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_vector_ulong.h
+ C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-static/include/gsl/gsl_vector_ushort.h
  C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/abstract.h
  C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/addon.h
  C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/base_cf.h

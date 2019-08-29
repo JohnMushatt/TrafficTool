@@ -111,8 +111,8 @@ DataParser::~DataParser() {
 
 void DataParser::displayData() {
     mglGraph graph;
-    graph.FPlot("sin(pi*x)");
-    graph.WriteFrame("test.png");
+    //graph.FPlot("sin(pi*x)");
+    //graph.WriteFrame("test.png");
 }
 
 int main(int argc, char **argv) {

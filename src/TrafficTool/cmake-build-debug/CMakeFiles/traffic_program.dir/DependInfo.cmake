@@ -13,6 +13,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include"
   "C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0"
+  "C:/Users/johnm/Desktop/TrafficTool/libs/gsl-2.2.1_mingw-6.2.0/gsl-2.2.1-shared/include"
   )
 
 # Targets to which this target links.

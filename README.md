@@ -13,6 +13,7 @@ Additional libraries:
 - MySQL C++ Connector
 - MathGL2
     - TBD
+- GNU Scientific Library (GSL)
 
 ## Build Information
 ```
