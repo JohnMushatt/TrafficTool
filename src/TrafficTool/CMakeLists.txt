@@ -5,7 +5,7 @@ cmake_minimum_required (VERSION 3.14.5)
 
 
 
-set(CMAKE_CXX_FLAGS "-std=c++11 -Wall -Wextra")
+set(CMAKE_CXX_FLAGS "-std=c++11 -Wall")
 set(CMAKE_BUILD_TYPE DEBUG)
 
 set(MathGL2_NO_SYSTEM_PATHS ON)

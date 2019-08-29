@@ -62,7 +62,7 @@ bool DataParser::parseFile(const char *file) {
     std::cout << "Logging info." << std::endl << "Number of parsed rows: " << row_count
               << std::endl << "Parsed data\n-------------------------------------" << std::endl;
     for (std::size_t i = 0; i < data.size(); i++) {
-        std::cout << data.at(i - 1) << std::endl;
+        std::cout << data.at(i)->toString() << std::endl;
     }
 
     std::cout << "-------------------------------------" << std::endl;
@@ -106,11 +106,12 @@ bool DataParser::buildTrafficDataObject(int route_id, std::string date,
  * Destructor for DataParser
  */
 DataParser::~DataParser() {
-
+    data.clear();
+    data.shrink_to_fit();
 }
 
 void DataParser::displayData() {
-    mglGraph graph;
+    //mglGraph graph;
     //graph.FPlot("sin(pi*x)");
     //graph.WriteFrame("test.png");
 }
@@ -125,5 +126,10 @@ int main(int argc, char **argv) {
     const char *file_name = argv[1];
     std::unique_ptr<DataParser> parser(new DataParser(file_name));
     parser->displayData();
+
+    //Clean up memory
+    std::cout<<"Cleaning up memory" <<std::endl;
+    parser.reset();
+    std::cout << "Program has finished, now exiting" <<std::endl;
     return EXIT_SUCCESS;
 }
