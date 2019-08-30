@@ -35,6 +35,8 @@ boost/property_tree/json_parser.hpp
 -
 boost/regex.hpp
 -
+MathUtilities.h
+/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/MathUtilities.h
 mgl2/mgl.h
 -
 iterator
@@ -42,6 +44,10 @@ iterator
 functional
 -
 stdexcept
+-
+
+/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/MathUtilities.h
+type_traits
 -
 
 /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/TrafficDataObject.h

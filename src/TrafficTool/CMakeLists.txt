@@ -47,7 +47,7 @@ if(Boost_FOUND)
 	include_directories(${Boost_INCLUDE_DIRS})
 
 
-	add_executable(traffic_program DataParser.cpp TrafficDataObject.cpp)
+	add_executable(traffic_program DataParser.cpp TrafficDataObject.cpp MathUtilities.cpp MathUtilities.h)
 	target_link_libraries(traffic_program ${Boost_LIBRARIES} ${MathGL2_LIBRARIES} ${GSL_LIBRARIES})
 endif()
 

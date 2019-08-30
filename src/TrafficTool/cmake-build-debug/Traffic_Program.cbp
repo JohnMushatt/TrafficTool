@@ -92,6 +92,12 @@
 		<Unit filename="/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/DataParser.h">
 			<Option target="traffic_program"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/MathUtilities.cpp">
+			<Option target="traffic_program"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/MathUtilities.h">
+			<Option target="traffic_program"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/TrafficDataObject.cpp">
 			<Option target="traffic_program"/>
 		</Unit>

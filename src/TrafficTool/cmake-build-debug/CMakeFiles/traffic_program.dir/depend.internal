@@ -4,6 +4,7 @@
 CMakeFiles/traffic_program.dir/DataParser.cpp.o
  /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/DataParser.cpp
  /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/DataParser.h
+ /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/MathUtilities.h
  /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/TrafficDataObject.h
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/any.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/archive/archive_exception.hpp
@@ -1095,6 +1096,9 @@ CMakeFiles/traffic_program.dir/DataParser.cpp.o
  C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/type.h
  C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/vect.h
  C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/volume.h
+CMakeFiles/traffic_program.dir/MathUtilities.cpp.o
+ /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/MathUtilities.cpp
+ /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/MathUtilities.h
 CMakeFiles/traffic_program.dir/TrafficDataObject.cpp.o
  /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/TrafficDataObject.cpp
  /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/TrafficDataObject.h

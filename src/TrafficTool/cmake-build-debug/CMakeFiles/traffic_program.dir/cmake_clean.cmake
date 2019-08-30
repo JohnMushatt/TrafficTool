@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/traffic_program.dir/DataParser.cpp.o"
   "CMakeFiles/traffic_program.dir/TrafficDataObject.cpp.o"
+  "CMakeFiles/traffic_program.dir/MathUtilities.cpp.o"
   "traffic_program.pdb"
   "traffic_program.exe"
   "libtraffic_program.dll.a"

@@ -20,7 +20,7 @@
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/json_parser.hpp>
 #include <boost/regex.hpp>
-
+#include "MathUtilities.h"
 #include <mgl2/mgl.h>
 #include <iterator>
 #include <functional>
@@ -43,6 +43,7 @@ public:
 	virtual ~DataParser();
 
 	void displayData();
+	double computeAverageParkedCars();
 private:
 	//2D Vector holding traffic data objects
 	std::vector<TrafficDataObject *> data;

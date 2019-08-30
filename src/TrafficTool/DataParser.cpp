@@ -6,6 +6,7 @@
  */
 
 #include "DataParser.h"
+
 /**
  * Constructor for DataParser
  * @param file_name File path to be parsed
@@ -116,6 +117,28 @@ void DataParser::displayData() {
     //graph.WriteFrame("test.png");
 }
 
+double DataParser::computeAverageParkedCars() {
+
+    std::vector<int> values;
+    std::map<std::string, int> parked_cars;
+    for (auto &element : data) {
+        std::string str(element->getStreetName());
+        std::pair<std::string,int> p(str,element->getParkedCars());
+        if (parked_cars.find(str) ==parked_cars.end()) {
+            parked_cars.insert(p);
+        } else {
+            int new_val = element->getParkedCars() + parked_cars.at(str);
+
+            parked_cars.insert(std::pair<std::string, int>(p.first, new_val));
+        }
+    }
+    for(auto& element : parked_cars) {
+        values.push_back(element.second);
+    }
+    const double final_val = computeAverage(values);
+    return final_val;
+}
+
 int main(int argc, char **argv) {
     std::cout << "Running data tool with arguments: " << argv[1] << std::endl;
 
@@ -127,9 +150,13 @@ int main(int argc, char **argv) {
     std::unique_ptr<DataParser> parser(new DataParser(file_name));
     parser->displayData();
 
+
+
+    //Average # of parked cars amongst streets
+    std::cout<<"Average # of parked cars on streets: " << parser->computeAverageParkedCars()<<std::endl;
     //Clean up memory
-    std::cout<<"Cleaning up memory" <<std::endl;
+    std::cout << "Cleaning up memory" << std::endl;
     parser.reset();
-    std::cout << "Program has finished, now exiting" <<std::endl;
+    std::cout << "Program has finished, now exiting" << std::endl;
     return EXIT_SUCCESS;
 }
