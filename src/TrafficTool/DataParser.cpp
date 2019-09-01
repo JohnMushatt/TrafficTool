@@ -107,7 +107,9 @@ bool DataParser::buildTrafficDataObject(int route_id, std::string date,
  * Destructor for DataParser
  */
 DataParser::~DataParser() {
+    //Call the delete method on all current objects in the vector
     data.clear();
+    //Resize the vector to 0, freeing up all memory
     data.shrink_to_fit();
 }
 
@@ -138,7 +140,28 @@ double DataParser::computeAverageParkedCars() {
     const double final_val = computeAverage(values);
     return final_val;
 }
+/**
+ * Returns one or more TrafficDataObjects that contain the max number of parked cars (Not max capacity)
+ * @return Vector container one or more TrafficData objects that have the max number of parked cars in the set
+ */
+std::vector<TrafficDataObject *> DataParser::getParkingMax() {
 
+    std::vector<double> values;
+    for(auto element : data) {
+        values.push_back(element->getParkedCars());
+    }
+    int max = findMax(values);
+
+    std::vector<TrafficDataObject *> list;
+
+    for(auto element :  data) {
+        int val = element->getParkedCars();
+        if(val == max) {
+            list.push_back(element);
+        }
+    }
+    return list;
+}
 int main(int argc, char **argv) {
     std::cout << "Running data tool with arguments: " << argv[1] << std::endl;
 
@@ -150,10 +173,16 @@ int main(int argc, char **argv) {
     std::unique_ptr<DataParser> parser(new DataParser(file_name));
     parser->displayData();
 
-
-
+    std::unique_ptr<MemoryTools> mem_tool;
+    mem_tool->VirtualMemoryProfile();
     //Average # of parked cars amongst streets
     std::cout<<"Average # of parked cars on streets: " << parser->computeAverageParkedCars()<<std::endl;
+
+    //Max number of parked cars
+    std::vector<TrafficDataObject *> ls = parser->getParkingMax();
+    for(auto element : ls) {
+        std::cout<<"Garage: " << element->
+    }
     //Clean up memory
     std::cout << "Cleaning up memory" << std::endl;
     parser.reset();

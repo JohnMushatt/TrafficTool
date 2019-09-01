@@ -5,6 +5,7 @@ CMakeFiles/traffic_program.dir/DataParser.cpp.o
  /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/DataParser.cpp
  /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/DataParser.h
  /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/MathUtilities.h
+ /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/MemoryTools.h
  /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/TrafficDataObject.h
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/any.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/archive/archive_exception.hpp
@@ -383,6 +384,7 @@ CMakeFiles/traffic_program.dir/DataParser.cpp.o
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/mpl/pair.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/mpl/pair_view.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/mpl/placeholders.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/mpl/print.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/mpl/prior.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/mpl/protect.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/mpl/push_back.hpp
@@ -848,6 +850,7 @@ CMakeFiles/traffic_program.dir/DataParser.cpp.o
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/serialization/serialization.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/serialization/split_free.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/serialization/split_member.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/serialization/static_warning.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/serialization/strong_typedef.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/serialization/tracking.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/serialization/tracking_enum.hpp
@@ -904,6 +907,16 @@ CMakeFiles/traffic_program.dir/DataParser.cpp.o
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/smart_ptr/scoped_array.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/smart_ptr/scoped_ptr.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/smart_ptr/shared_ptr.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/sort/pdqsort/pdqsort.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/sort/spreadsort/detail/constants.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/sort/spreadsort/detail/float_sort.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/sort/spreadsort/detail/integer_sort.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/sort/spreadsort/detail/spreadsort_common.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/sort/spreadsort/detail/string_sort.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/sort/spreadsort/float_sort.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/sort/spreadsort/integer_sort.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/sort/spreadsort/spreadsort.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/sort/spreadsort/string_sort.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/static_assert.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/throw_exception.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/tuple/detail/tuple_basic.hpp
@@ -916,6 +929,7 @@ CMakeFiles/traffic_program.dir/DataParser.cpp.o
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_index/detail/stl_register_class.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_index/stl_type_index.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_index/type_index_facade.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/add_const.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/add_cv.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/add_lvalue_reference.hpp
@@ -925,13 +939,23 @@ CMakeFiles/traffic_program.dir/DataParser.cpp.o
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/add_volatile.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/aligned_storage.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/alignment_of.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/common_type.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/conditional.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/conversion_traits.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/copy_cv.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/copy_cv_ref.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/copy_reference.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/cv_traits.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/decay.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/declval.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/detail/common_arithmetic_type.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/detail/common_type_impl.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/detail/composite_member_pointer_type.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/detail/composite_pointer_type.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/detail/config.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/detail/has_binary_operator.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/detail/has_postfix_operator.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/detail/has_prefix_operator.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/detail/is_function_cxx_03.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/detail/is_function_cxx_11.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/detail/is_function_msvc10_fix.hpp
@@ -943,22 +967,64 @@ CMakeFiles/traffic_program.dir/DataParser.cpp.o
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/detail/is_member_function_pointer_cxx_03.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/detail/is_rvalue_reference_msvc10_fix.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/detail/mp_defer.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/detail/yes_no_type.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/enable_if.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/extent.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/floating_point_promotion.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/function_traits.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_bit_and.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_bit_and_assign.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_bit_or.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_bit_or_assign.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_bit_xor.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_bit_xor_assign.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_complement.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_dereference.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_divides.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_divides_assign.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_equal_to.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_greater.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_greater_equal.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_left_shift.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_left_shift_assign.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_less.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_less_equal.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_logical_and.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_logical_not.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_logical_or.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_minus.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_minus_assign.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_modulus.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_modulus_assign.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_multiplies.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_multiplies_assign.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_negate.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_new_operator.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_not_equal_to.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_nothrow_assign.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_nothrow_constructor.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_nothrow_copy.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_nothrow_destructor.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_plus.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_plus_assign.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_post_decrement.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_post_increment.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_pre_decrement.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_pre_increment.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_right_shift.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_right_shift_assign.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_trivial_assign.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_trivial_constructor.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_trivial_copy.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_trivial_destructor.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_trivial_move_assign.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_trivial_move_constructor.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_unary_minus.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_unary_plus.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/has_virtual_destructor.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/integral_constant.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/integral_promotion.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/intrinsics.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_abstract.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_arithmetic.hpp
@@ -968,24 +1034,33 @@ CMakeFiles/traffic_program.dir/DataParser.cpp.o
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_base_of.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_class.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_complete.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_complex.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_compound.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_const.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_constructible.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_convertible.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_copy_assignable.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_copy_constructible.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_default_constructible.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_destructible.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_empty.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_enum.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_final.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_float.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_floating_point.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_function.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_fundamental.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_integral.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_list_constructible.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_lvalue_reference.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_member_function_pointer.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_member_object_pointer.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_member_pointer.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_noncopyable.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_nothrow_move_assignable.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_nothrow_move_constructible.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_nothrow_swappable.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_object.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_pod.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_pointer.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_polymorphic.hpp
@@ -994,17 +1069,22 @@ CMakeFiles/traffic_program.dir/DataParser.cpp.o
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_same.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_scalar.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_signed.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_stateless.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_union.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_unsigned.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_virtual_base_of.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_void.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/is_volatile.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/make_signed.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/make_unsigned.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/make_void.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/promote.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/rank.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/remove_all_extents.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/remove_bounds.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/remove_const.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/remove_cv.hpp
+ C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/remove_cv_ref.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/remove_extent.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/remove_pointer.hpp
  C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/type_traits/remove_reference.hpp
@@ -1096,9 +1176,6 @@ CMakeFiles/traffic_program.dir/DataParser.cpp.o
  C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/type.h
  C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/vect.h
  C:/Users/johnm/Desktop/TrafficTool/libs/mathgl-2.4.4-mingw.win64/include/mgl2/volume.h
-CMakeFiles/traffic_program.dir/MathUtilities.cpp.o
- /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/MathUtilities.cpp
- /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/MathUtilities.h
 CMakeFiles/traffic_program.dir/TrafficDataObject.cpp.o
  /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/TrafficDataObject.cpp
  /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/TrafficDataObject.h

@@ -150,33 +150,6 @@ DataParser.cpp.s:
 	$(MAKE) -f CMakeFiles/traffic_program.dir/build.make CMakeFiles/traffic_program.dir/DataParser.cpp.s
 .PHONY : DataParser.cpp.s
 
-MathUtilities.o: MathUtilities.cpp.o
-
-.PHONY : MathUtilities.o
-
-# target to build an object file
-MathUtilities.cpp.o:
-	$(MAKE) -f CMakeFiles/traffic_program.dir/build.make CMakeFiles/traffic_program.dir/MathUtilities.cpp.o
-.PHONY : MathUtilities.cpp.o
-
-MathUtilities.i: MathUtilities.cpp.i
-
-.PHONY : MathUtilities.i
-
-# target to preprocess a source file
-MathUtilities.cpp.i:
-	$(MAKE) -f CMakeFiles/traffic_program.dir/build.make CMakeFiles/traffic_program.dir/MathUtilities.cpp.i
-.PHONY : MathUtilities.cpp.i
-
-MathUtilities.s: MathUtilities.cpp.s
-
-.PHONY : MathUtilities.s
-
-# target to generate assembly for a file
-MathUtilities.cpp.s:
-	$(MAKE) -f CMakeFiles/traffic_program.dir/build.make CMakeFiles/traffic_program.dir/MathUtilities.cpp.s
-.PHONY : MathUtilities.cpp.s
-
 TrafficDataObject.o: TrafficDataObject.cpp.o
 
 .PHONY : TrafficDataObject.o
@@ -216,9 +189,6 @@ help:
 	@echo "... DataParser.o"
 	@echo "... DataParser.i"
 	@echo "... DataParser.s"
-	@echo "... MathUtilities.o"
-	@echo "... MathUtilities.i"
-	@echo "... MathUtilities.s"
 	@echo "... TrafficDataObject.o"
 	@echo "... TrafficDataObject.i"
 	@echo "... TrafficDataObject.s"

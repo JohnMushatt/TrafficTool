@@ -271,6 +271,9 @@ MathGL_DIR:PATH=MathGL_DIR-NOTFOUND
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
+//Path to a library.
+PSAPI:FILEPATH=PSAPI-NOTFOUND
+
 //Path to a program.
 ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf.exe
 

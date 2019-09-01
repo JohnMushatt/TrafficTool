@@ -17,9 +17,7 @@ set(MATHGL2_ROOT "C:\\Users\\johnm\\Desktop\\TrafficTool\\libs\\mathgl-2.4.4-min
 find_package(MathGL2)
 message(STATUS "MathGL2 library status: ${MathGL2_FOUND}")
 include_directories("${MATHGL2_INCLUDE_DIR}")
-#message(STATUS "MathGL2 include dir: ${MATHGL2_INCLUDE_DIR}")
-#message(STATUS "MathGL2 libraries dir: ${MATHGL2_LIBRARY}")
-#message(STATUS "MathGL2 root: ${MATHGL2_ROOT}")
+
 
 
 set(Boost_NO_SYSTEM_PATHS ON)
@@ -38,16 +36,16 @@ find_package(GSL REQUIRED)
 include_directories("${GSL_INCLUDE_DIR}")
 message(STATUS "GSL library status: ${GSL_FOUND}")
 
+find_library(PSAPI Psapi)
+message(STATUS "PSAPI library status: ${Psapi_FOUND}")
 #set(CONCPP_ROOT "C:\\Users\\johnm\\Desktop\\TrafficTool\\libs\\mysql-connector-c++-8.0.17-winx64")
 #set(CONCPP_INCLUDE "C:\\Users\\johnm\\Desktop\\TrafficTool\\libs\\mysql-connector-c++-8.0.17-winx64\\include")
 #set(CONCPP_LIB_DIR "C:\\Users\\johnm\\Desktop\\TrafficTool\\libs\\mysql-connector-c++-8.0.17-winx64\\lib64")
 #set(CONCPP_STATIC_LIB_DIR "C:\\Users\\johnm\\Desktop\\TrafficTool\\libs\\mysql-connector-c++-8.0.17-winx64\\lib64")
 
-if(Boost_FOUND)
-	include_directories(${Boost_INCLUDE_DIRS})
+include_directories(${Boost_INCLUDE_DIRS})
 
 
-	add_executable(traffic_program DataParser.cpp TrafficDataObject.cpp MathUtilities.cpp MathUtilities.h)
-	target_link_libraries(traffic_program ${Boost_LIBRARIES} ${MathGL2_LIBRARIES} ${GSL_LIBRARIES})
-endif()
+add_executable(traffic_program DataParser.cpp TrafficDataObject.cpp MathUtilities.h MemoryTools.h Garage.h)
+target_link_libraries(traffic_program ${Boost_LIBRARIES} ${MathGL2_LIBRARIES} ${GSL_LIBRARIES} -lpsapi)
 

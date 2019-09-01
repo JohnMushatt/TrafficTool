@@ -21,6 +21,7 @@
 #include <boost/property_tree/json_parser.hpp>
 #include <boost/regex.hpp>
 #include "MathUtilities.h"
+#include "MemoryTools.h"
 #include <mgl2/mgl.h>
 #include <iterator>
 #include <functional>
@@ -43,6 +44,7 @@ public:
 	virtual ~DataParser();
 
 	void displayData();
+	std::vector<TrafficDataObject *>   getParkingMax();
 	double computeAverageParkedCars();
 private:
 	//2D Vector holding traffic data objects

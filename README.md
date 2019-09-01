@@ -4,7 +4,7 @@ C++/JS/MySQL tool to analyze traffic data
 ## General Information
 This project requires CMake (3.15.0) to build and run!
 
-** To correctly run this program, the CMakelists.txt file _must_ be edited to have the correct library paths! **
+**To correctly run this program, the `src/TrafficTool/CMakelists.txt` file _must_ be edited to have the correct library paths!**
 
 Additional libraries:
 - Boost C++ 1.70.0
@@ -21,3 +21,6 @@ Additional libraries:
 ```
 cmake .
 ```
+
+## Changelog 
+09/01/2019 - Added initial memory profiling for application and simple math functions

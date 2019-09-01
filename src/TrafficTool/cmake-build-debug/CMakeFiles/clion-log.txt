@@ -24,6 +24,7 @@ Call Stack (most recent call first):
 -- Boost version: 1.70.0
 -- Boost library status: 1
 -- GSL library status: TRUE
+-- PSAPI library status: 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/cmake-build-debug

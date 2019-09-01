@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/DataParser.cpp" "/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/cmake-build-debug/CMakeFiles/traffic_program.dir/DataParser.cpp.o"
-  "/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/MathUtilities.cpp" "/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/cmake-build-debug/CMakeFiles/traffic_program.dir/MathUtilities.cpp.o"
   "/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/TrafficDataObject.cpp" "/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/cmake-build-debug/CMakeFiles/traffic_program.dir/TrafficDataObject.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
