@@ -8,10 +8,12 @@
 #ifndef TRAFFICDATAOBJECT_H_
 #define TRAFFICDATAOBJECT_H_
 
+#include "DataObject.h"
 #include <string>
 #include <iostream>
+#include <sstream>
 
-class TrafficDataObject {
+class TrafficDataObject : public DataObject {
 protected:
     enum parking_congestions {
         LOW, MEDIUM, HIGH
@@ -21,16 +23,20 @@ protected:
     };
 public:
     TrafficDataObject(int route_id, std::string date, std::string time, std::string street_name, int parked_cars,
-                      int rental_cars, std::string zone, std::string congestion);
+                      int rental_cars, std::string zone, std::string congestion) : DataObject(street_name, date, time) {
+        this->route_id = route_id;
+        this->parked_cars = parked_cars;
+        this->rental_cars = rental_cars;
+        setParkingZone(zone);
+        setParkingCongestion(congestion);
+    }
 
-    virtual ~TrafficDataObject();
+    virtual ~TrafficDataObject() {
+
+    }
 
     int getRouteID() {
         return this->route_id;
-    }
-
-    std::string getStreetName() {
-        return this->street_name;
     }
 
     int getParkedCars() {
@@ -44,12 +50,7 @@ public:
     parking_zones getParkingZone() {
         return this->zone;
     }
-    std::string getDate() {
-        return this->date;
-    }
-    std::string getTime() {
-        return this->time;
-    }
+
     parking_congestions getParkingCongestion() {
         return this->congestion;
     }
@@ -77,17 +78,48 @@ public:
         }
         return "DOES NOT EXIST";
     }
-    std::string toString();
+
+    /**
+     * Converts object into string notation
+     * @return std::string object version of current 'this' object
+     */
+    std::string toString() {
+        std::ostringstream oss;
+
+        oss << "Route id: " << this->getRouteID() << " Date: "
+            << this->getDate() << " Time: " << this->getTime() << "Street Name: "
+            << this->getName() << " Parked Cars: " << this->getParkedCars() << " Rental Cars: "
+            << this->getRentalCars()
+            << " Parking Zone: " << this->stringifyParking() << " Congestion Level: " << this->stringifyCongestion();
+        return oss.str();
+    }
 
 private:
     int route_id;
-    std::string street_name, date, time;
     int parked_cars;
     int rental_cars;
 
-    void setParkingZone(std::string zone);
+    void setParkingZone(std::string zone) {
+        if (zone.compare("blue") == 0) {
+            this->zone = BLUE;
+        } else if (zone.compare("red") == 0) {
+            this->zone = RED;
+        } else if (zone.compare("green") == 0) {
+            this->zone = GREEN;
+        } else if (zone.compare("orange") == 0) {
+            this->zone = ORANGE;
+        }
+    }
 
-    void setParkingCongestion(std::string congestion);
+    void setParkingCongestion(std::string congestion) {
+        if (congestion.compare("low") == 0) {
+            this->congestion = LOW;
+        } else if (congestion.compare("medium") == 0) {
+            this->congestion = MEDIUM;
+        } else if (congestion.compare("high") == 0) {
+            this->congestion = HIGH;
+        }
+    }
 
 
     parking_zones zone;

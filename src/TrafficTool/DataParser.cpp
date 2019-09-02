@@ -124,9 +124,9 @@ double DataParser::computeAverageParkedCars() {
     std::vector<int> values;
     std::map<std::string, int> parked_cars;
     for (auto &element : data) {
-        std::string str(element->getStreetName());
-        std::pair<std::string,int> p(str,element->getParkedCars());
-        if (parked_cars.find(str) ==parked_cars.end()) {
+        std::string str(element->getName());
+        std::pair<std::string, int> p(str, element->getParkedCars());
+        if (parked_cars.find(str) == parked_cars.end()) {
             parked_cars.insert(p);
         } else {
             int new_val = element->getParkedCars() + parked_cars.at(str);
@@ -134,12 +134,13 @@ double DataParser::computeAverageParkedCars() {
             parked_cars.insert(std::pair<std::string, int>(p.first, new_val));
         }
     }
-    for(auto& element : parked_cars) {
+    for (auto &element : parked_cars) {
         values.push_back(element.second);
     }
     const double final_val = computeAverage(values);
     return final_val;
 }
+
 /**
  * Returns one or more TrafficDataObjects that contain the max number of parked cars (Not max capacity)
  * @return Vector container one or more TrafficData objects that have the max number of parked cars in the set
@@ -147,21 +148,22 @@ double DataParser::computeAverageParkedCars() {
 std::vector<TrafficDataObject *> DataParser::getParkingMax() {
 
     std::vector<double> values;
-    for(auto element : data) {
+    for (auto element : data) {
         values.push_back(element->getParkedCars());
     }
     int max = findMax(values);
 
     std::vector<TrafficDataObject *> list;
 
-    for(auto element :  data) {
+    for (auto element :  data) {
         int val = element->getParkedCars();
-        if(val == max) {
+        if (val == max) {
             list.push_back(element);
         }
     }
     return list;
 }
+
 int main(int argc, char **argv) {
     std::cout << "Running data tool with arguments: " << argv[1] << std::endl;
 
@@ -176,12 +178,13 @@ int main(int argc, char **argv) {
     std::unique_ptr<MemoryTools> mem_tool;
     mem_tool->VirtualMemoryProfile();
     //Average # of parked cars amongst streets
-    std::cout<<"Average # of parked cars on streets: " << parser->computeAverageParkedCars()<<std::endl;
+    std::cout << "Average # of parked cars on streets: " << parser->computeAverageParkedCars() << std::endl;
 
     //Max number of parked cars
     std::vector<TrafficDataObject *> ls = parser->getParkingMax();
-    for(auto element : ls) {
-        std::cout<<"Garage: " << element->
+    for (auto element : ls) {
+        std::cout << "Garage: " << element->getName() << "\tNumber of Parked Cars: " << element->getParkedCars()
+                  << std::endl;
     }
     //Clean up memory
     std::cout << "Cleaning up memory" << std::endl;

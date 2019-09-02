@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/DataObject.h
+string
+-
+
 /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/DataParser.cpp
 DataParser.h
 /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/DataParser.h
@@ -67,9 +71,13 @@ iostream
 -
 
 /cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/TrafficDataObject.h
+DataObject.h
+/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/DataObject.h
 string
 -
 iostream
+-
+sstream
 -
 
 C:/Users/johnm/Desktop/TrafficTool/libs/boost_1_70_0/boost/any.hpp

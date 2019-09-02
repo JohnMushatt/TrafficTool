@@ -86,6 +86,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/DataObject.h">
+			<Option target="traffic_program"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/DataParser.cpp">
 			<Option target="traffic_program"/>
 		</Unit>
@@ -99,9 +102,6 @@
 			<Option target="traffic_program"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/MemoryTools.h">
-			<Option target="traffic_program"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/TrafficDataObject.cpp">
 			<Option target="traffic_program"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/johnm/Desktop/TrafficTool/src/TrafficTool/TrafficDataObject.h">

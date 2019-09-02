@@ -46,6 +46,6 @@ message(STATUS "PSAPI library status: ${Psapi_FOUND}")
 include_directories(${Boost_INCLUDE_DIRS})
 
 
-add_executable(traffic_program DataParser.cpp TrafficDataObject.cpp MathUtilities.h MemoryTools.h Garage.h)
+add_executable(traffic_program DataParser.cpp MathUtilities.h MemoryTools.h Garage.h DataObject.h TrafficDataObject.h)
 target_link_libraries(traffic_program ${Boost_LIBRARIES} ${MathGL2_LIBRARIES} ${GSL_LIBRARIES} -lpsapi)
 

@@ -150,33 +150,6 @@ DataParser.cpp.s:
 	$(MAKE) -f CMakeFiles/traffic_program.dir/build.make CMakeFiles/traffic_program.dir/DataParser.cpp.s
 .PHONY : DataParser.cpp.s
 
-TrafficDataObject.o: TrafficDataObject.cpp.o
-
-.PHONY : TrafficDataObject.o
-
-# target to build an object file
-TrafficDataObject.cpp.o:
-	$(MAKE) -f CMakeFiles/traffic_program.dir/build.make CMakeFiles/traffic_program.dir/TrafficDataObject.cpp.o
-.PHONY : TrafficDataObject.cpp.o
-
-TrafficDataObject.i: TrafficDataObject.cpp.i
-
-.PHONY : TrafficDataObject.i
-
-# target to preprocess a source file
-TrafficDataObject.cpp.i:
-	$(MAKE) -f CMakeFiles/traffic_program.dir/build.make CMakeFiles/traffic_program.dir/TrafficDataObject.cpp.i
-.PHONY : TrafficDataObject.cpp.i
-
-TrafficDataObject.s: TrafficDataObject.cpp.s
-
-.PHONY : TrafficDataObject.s
-
-# target to generate assembly for a file
-TrafficDataObject.cpp.s:
-	$(MAKE) -f CMakeFiles/traffic_program.dir/build.make CMakeFiles/traffic_program.dir/TrafficDataObject.cpp.s
-.PHONY : TrafficDataObject.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +162,6 @@ help:
 	@echo "... DataParser.o"
 	@echo "... DataParser.i"
 	@echo "... DataParser.s"
-	@echo "... TrafficDataObject.o"
-	@echo "... TrafficDataObject.i"
-	@echo "... TrafficDataObject.s"
 .PHONY : help
 
 
