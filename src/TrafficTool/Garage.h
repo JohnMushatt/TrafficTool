@@ -10,11 +10,12 @@
 
 class Garage: public DataObject {
 public:
-    Garage(int rc, int ts, int es, double un,std::string gn,std::string date, std::string time): DataObject(gn,date,time) {
+    Garage(int rc, int ts, int es,int wp, double un,std::string gn,std::string date, std::string time): DataObject(gn,date,time) {
         //Given values
         this->rental_cars = rc;
         this->total_spots=ts;
         this->empty_spots = es;
+        this->website_parking=wp;
         this->utilization_num = un;
         this->garage_name = gn;
         this->date = date;
@@ -30,10 +31,13 @@ public:
 
     }
 private:
-    int parked_cars,rental_cars,total_spots,empty_spots;
+    int parked_cars,rental_cars,total_spots,empty_spots,website_parking;
     double utilization_num;
 
     std::string garage_name,utilzation_level, date, time;
+    /**
+     * Computes the utilization level after certain values are initialized
+     */
     void determineUtilizationLevel() {
 
         if(this->utilization_num >=.90) {

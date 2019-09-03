@@ -64,13 +64,28 @@ static double findMin(Container list) {
 
 template<typename Container>
 static double findMode(Container list) {
-    double mode =0;
-    int count =0;
+    double num = list[0];
+    double mode =num;
+    int count =1;
+    int countMode = 1;
 
     //Perform spreadsort on the list || Provided by Boost::sort::spreadsort
     boost::sort::spreadsort::spreadsort(&list);
 
-
+    for(auto element : list) {
+        if(element ==num) {
+            ++count;
+        }
+        else {
+            if(count > countMode) {
+                countMode = count;
+                mode = num;
+            }
+            count  = 1;
+            num = element;
+        }
+    }
+    return mode;
 
 
 }

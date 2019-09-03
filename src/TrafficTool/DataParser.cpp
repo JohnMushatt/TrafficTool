@@ -11,9 +11,43 @@
  * Constructor for DataParser
  * @param file_name File path to be parsed
  */
-DataParser::DataParser(const char *file_name) {
+DataParser::DataParser() {
+    //jsonParser(file_name);
+    //parseFile(file_name);
+}
 
-    parseFile(file_name);
+bool DataParser::jsonParser(const char *file) {
+    try {
+        //String stream
+        std::stringstream stream;
+        //Property stream
+        boost::property_tree::ptree pt;
+        //Json parser
+        boost::property_tree::read_json(file, pt);
+        BOOST_FOREACH(boost::property_tree::ptree::value_type &v, pt.get_child("route_id"))
+        {
+            assert(v.first.empty());
+            std::cout<< v.first.data() <<std::endl;
+            std::cout<< v.second.data() <<std::endl;
+
+        }
+        //
+        printTree(pt);
+        return true;
+    }
+    catch (std::exception const &e) {
+        std::cerr << e.what() << std::endl;
+        return false;
+    }
+}
+
+void DataParser::printTree(boost::property_tree::ptree const &pt) {
+    using boost::property_tree::ptree;
+    ptree::const_iterator end = pt.end();
+    for (ptree::const_iterator it = pt.begin(); it != end; ++it) {
+        std::cout << it->first << ": " << it->second.get_value<std::string>() << std::endl;
+        printTree(it->second);
+    }
 }
 
 /**
@@ -172,23 +206,34 @@ int main(int argc, char **argv) {
         return EXIT_FAILURE;
     }
     const char *file_name = argv[1];
-    std::unique_ptr<DataParser> parser(new DataParser(file_name));
-    parser->displayData();
+    std::unique_ptr<DataParser> parser(new DataParser());
+    if(parser->jsonParser(file_name)) {
 
-    std::unique_ptr<MemoryTools> mem_tool;
-    mem_tool->VirtualMemoryProfile();
-    //Average # of parked cars amongst streets
-    std::cout << "Average # of parked cars on streets: " << parser->computeAverageParkedCars() << std::endl;
 
-    //Max number of parked cars
-    std::vector<TrafficDataObject *> ls = parser->getParkingMax();
-    for (auto element : ls) {
-        std::cout << "Garage: " << element->getName() << "\tNumber of Parked Cars: " << element->getParkedCars()
-                  << std::endl;
+        parser->displayData();
+
+
+        //Average # of parked cars amongst streets
+        std::cout << "Average # of parked cars on streets: " << parser->computeAverageParkedCars() << std::endl;
+
+        //Max number of parked cars
+        std::vector<TrafficDataObject *> ls = parser->getParkingMax();
+        for (auto element : ls) {
+            std::cout << "Garage: " << element->getName() << "\tNumber of Parked Cars: " << element->getParkedCars()
+                      << std::endl;
+        }
+
+        //Find the mode of parked cars
+
+        std::unique_ptr<MemoryTools> mem_tool;
+        mem_tool->VirtualMemoryProfile();
+        //Clean up memory
+        std::cout << "Cleaning up memory" << std::endl;
+        parser.reset();
+        std::cout << "Program has finished, now exiting" << std::endl;
+        return EXIT_SUCCESS;
     }
-    //Clean up memory
-    std::cout << "Cleaning up memory" << std::endl;
-    parser.reset();
-    std::cout << "Program has finished, now exiting" << std::endl;
-    return EXIT_SUCCESS;
+    else {
+        return EXIT_FAILURE;
+    }
 }

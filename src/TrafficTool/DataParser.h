@@ -17,6 +17,7 @@
 #include <string>
 #include <regex>
 #include <algorithm>
+#include <boost/foreach.hpp>
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/json_parser.hpp>
 #include <boost/regex.hpp>
@@ -37,7 +38,7 @@ public:
 	/**
 	 * Constructor calls private openFile() with given argument
 	 */
-	DataParser(const char *file_name);
+	DataParser();
 	/**
 	 * Default Destructor
 	 */
@@ -46,13 +47,23 @@ public:
 	void displayData();
 	std::vector<TrafficDataObject *>   getParkingMax();
 	double computeAverageParkedCars();
+    /**
+     * Parses files
+     */
+    bool parseFile(const char *file);
+    /**
+	 * Parses the file via json property tree
+	 * @param file File to parse
+	 * @return True if successfully parsed the file into a property tree
+	 */
+    bool jsonParser(const char *file);
+
 private:
 	//2D Vector holding traffic data objects
 	std::vector<TrafficDataObject *> data;
-	/**
-	 * Parses files
-	 */
-	bool parseFile(const char *file);
+
+
+	void printTree(boost::property_tree::ptree const& pt);
 	/**
 	 * Constructs a TrafficDataObject from parsed information
 	 */
